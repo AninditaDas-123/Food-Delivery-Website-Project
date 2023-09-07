@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+	<link href="st.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+        
+	     body{
+			background-image:url("b.webp"); 
+            font-family: Arial, Helvetica, sans-serif;     
+		 }
+            
+		.form-control{
+            background-color: wheat;
+            color:black;
+
+            
+		}
+		 .form-group{
+		 	padding:5px;
+		 	font-size: 25px;
+		 	font-style: oblique;
+            font-family: "Times New Roman",Times,serif;
+		 	
+		 }
+		 input[type=text],input[type=password],input[type=number],
+		 input[type=email]{
+		 	padding-left: 3rem;
+			position: relative;
+			left: 2rem;
+            font-style: inherit;
+            width:95%;
+            border:none;
+
+		 }
+         a{
+            color:black;
+            font-style: italic;
+         }
+         .signin{
+            text-align:center;
+         }
+         p{
+            font-style: italic;
+            font-size: 1.5rem;
+         }
+         .registerbtn{
+            padding:16 px 20 px;
+            margin:8px o;
+            border:none;
+            cursor:pointer;
+            width:100%;
+            opacity:0.9;
+            background-color: palevioletred;
+            font-style: italic;
+         }
+	</style>
+</head>
+<body>
+	<h1 class="text-white" style ="text-align: center; font-style: italic;">CREATE ACCOUNT</h1>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6 mx-auto d-block">
+		<form method="post" action=" " class="form-control">
+			<div class="form-group">
+			<label>
+				User Name:
+			</label><br>
+			<input type="text" name="fname" placeholder="Enter your name" required>
+		</div>
+		<div class="form-group">
+			<label>
+				Phone Number:
+			</label><br>
+			<input type="number" name="phno" placeholder="Enter your number" required>
+		</div>
+		<div class="form-group">
+			<label>
+				Email:
+			</label><br>
+			<input type="email" name="email" placeholder="Enter your email id" required>
+		</div>
+		
+		<div class="form-group">
+			<label>
+				 Password:
+			</label><br>
+			<input type="password" name="pswd" placeholder="Enter password" required>
+		</div>
+		<div class="form-group">
+			<label>
+				Confirm Password:
+			</label><br>
+            <input type="password" name="cpswd" placeholder="Re-type password" required>
+            <br><br>
+        <button type="button" class="registerbtn " ><a href = "homepage.html">Register</a></button>
+		</div class="container signin">
+             <p>Already hava an account?</p>
+             <button class="btn btn-success"><a href="login.html">Sign in</a></button>
+		</form>
+    </div>
+</div>
+	</div>
+
+</body>
+</html>
